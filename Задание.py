@@ -1,5 +1,4 @@
 import streamlit as st
-import numpy
 ##### Генерация сеток: Gmsh
 r'''
 **Gmsh: информация + работающие примеры**
