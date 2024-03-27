@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5012d7a8-3ead-44d3-8da5-00593c9ac165" name="Changes" comment="Прокт по Gmsh" />
+    <list default="true" id="e88170b0-dde9-4bad-aa18-154c9a22a62b" name="Changes" comment="Пример оформления первого слайда">
+      <change afterPath="$PROJECT_DIR$/Pattern.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,28 +24,20 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "petrazhitskiy"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="03868eda-51d4-4560-b30a-d267c0db0f77" />
-        <option name="url" value="https://github.com/petrazhitskiy/Gmsh.git" />
-      </UrlAndAccount>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
+  &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="2e3tobld2EMz4RVdW8lbZcEhqrP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2eAoEIp0PqVCqsz1srPDJimkIac" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,14 +45,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.main.executor": "Run",
-    "Python.Задание.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/dan/Desktop/FEM/Gmsh/pythonProject",
+    "git-widget-placeholder": "Streamlit-Gmsh",
+    "last_opened_file_path": "/home/dan/Desktop/FEM/clone/Gmsh",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -65,33 +67,25 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5012d7a8-3ead-44d3-8da5-00593c9ac165" name="Changes" comment="" />
-      <created>1711145265591</created>
+      <changelist id="e88170b0-dde9-4bad-aa18-154c9a22a62b" name="Changes" comment="" />
+      <created>1711356631490</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1711145265591</updated>
+      <updated>1711356631490</updated>
     </task>
-    <task id="LOCAL-00001" summary="Прокт по Gmsh">
+    <task id="LOCAL-00001" summary="Пример оформления первого слайда">
       <option name="closed" value="true" />
-      <created>1711191332228</created>
+      <created>1711356864657</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1711191332228</updated>
+      <updated>1711356864657</updated>
     </task>
-    <task id="LOCAL-00002" summary="Прокт по Gmsh">
-      <option name="closed" value="true" />
-      <created>1711191346557</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1711191346557</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Прокт по Gmsh" />
-    <option name="LAST_COMMIT_MESSAGE" value="Прокт по Gmsh" />
+    <MESSAGE value="Пример оформления первого слайда" />
+    <option name="LAST_COMMIT_MESSAGE" value="Пример оформления первого слайда" />
   </component>
 </project>
