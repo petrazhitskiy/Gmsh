@@ -1,6 +1,7 @@
 import streamlit as st
 ##  идет как отдельная бибилиотека, устанавливайте через терминал pip install st-pages
 from st_pages import Page, show_pages, add_page_title
+
 st.sidebar.title("Gmsh")
 
 
