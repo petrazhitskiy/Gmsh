@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e88170b0-dde9-4bad-aa18-154c9a22a62b" name="Changes" comment="gmsh">
+    <list default="true" id="e88170b0-dde9-4bad-aa18-154c9a22a62b" name="Changes" comment="Примеры streamlit(Наш первый проект)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.py" beforeDir="false" afterPath="$PROJECT_DIR$/3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4.py" beforeDir="false" afterPath="$PROJECT_DIR$/4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.py" beforeDir="false" afterPath="$PROJECT_DIR$/5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.py" beforeDir="false" afterPath="$PROJECT_DIR$/6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.py" beforeDir="false" afterPath="$PROJECT_DIR$/7.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test4.py" beforeDir="false" afterPath="$PROJECT_DIR$/test4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test6.py" beforeDir="false" afterPath="$PROJECT_DIR$/test6.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +59,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Streamlit-Gmsh",
-    "last_opened_file_path": "/home/dan/Загрузки/streamlit.py",
+    "last_opened_file_path": "/home/dan/Desktop/FEM/clone/Gmsh",
     "run.code.analysis.last.selected.profile": "aDefault",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
@@ -149,7 +154,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711723935531</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="gmsh">
+      <option name="closed" value="true" />
+      <created>1711727161468</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711727161468</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Примеры streamlit(Наш первый проект)">
+      <option name="closed" value="true" />
+      <created>1711727304900</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711727304900</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,6 +188,7 @@
     <MESSAGE value="Пример оформления первого слайда" />
     <MESSAGE value="Пример оформления" />
     <MESSAGE value="gmsh" />
-    <option name="LAST_COMMIT_MESSAGE" value="gmsh" />
+    <MESSAGE value="Примеры streamlit(Наш первый проект)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Примеры streamlit(Наш первый проект)" />
   </component>
 </project>
