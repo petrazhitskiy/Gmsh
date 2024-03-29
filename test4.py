@@ -1,5 +1,7 @@
 import gmsh
-
+import meshio
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
 # Инициализация Gmsh
 gmsh.initialize()
 
@@ -28,7 +30,18 @@ gmsh.model.geo.synchronize()
 gmsh.model.mesh.generate(2)  # 2D сетка
 
 # Визуализация сетки (необязательно)
-gmsh.fltk.run()
+#теперь выводится сразу график из matplotlib, а не открываетсяс gmsh
+#gmsh.fltk.run()
 
-# Завершение работы с Gmsh
+gmsh.write("gmsh_test4.msh")
+# Creates graphical user interface
+mesh = meshio.read('gmsh_test4.msh')
+
+# Отображение данных с помощью matplotlib
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+ax.plot_trisurf(mesh.points[:, 0], mesh.points[:, 1], mesh.points[:, 2], triangles=mesh.cells[0].data)
+plt.show()
+# It finalize the Gmsh API
 gmsh.finalize()
+
