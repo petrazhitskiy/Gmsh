@@ -19,5 +19,5 @@ mesh_size = st.sidebar.slider("Mesh Size", 0.01, 0.5, 0.01)
 
 if st.button("Generate and Show Mesh"):
     mesh_file = "gmsh_test4.msh"
-    subprocess.run(["python3", "generate_mesh4.py", str(width), str(height), str(mesh_size), mesh_file])
+    subprocess.run(["python3", "generate_mesh4.py", mesh_file, str(width), str(height), str(mesh_size), ])
     plot_mesh(mesh_file)

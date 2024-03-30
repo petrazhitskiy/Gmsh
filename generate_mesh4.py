@@ -5,16 +5,16 @@ import matplotlib.pyplot as plt
 import meshio
 
 
-def generate_mesh(width, height, mesh_size, output_file):
+def generate_mesh(output_file, width, height, mesh_size ):
     gmsh.initialize()   
     gmsh.model.add("Plane")
 
 
     # Создание точек
-    p1 = gmsh.model.geo.addPoint(width, height, 0, mesh_size)
-    p2 = gmsh.model.geo.addPoint(width, height, 0, mesh_size)
+    p1 = gmsh.model.geo.addPoint(0, 0, 0, mesh_size)
+    p2 = gmsh.model.geo.addPoint(width, 0, 0, mesh_size)
     p3 = gmsh.model.geo.addPoint(width, height, 0, mesh_size)
-    p4 = gmsh.model.geo.addPoint(width, height, 0, mesh_size)
+    p4 = gmsh.model.geo.addPoint(0, height, 0, mesh_size)
 
     # Создание линий
     l1 = gmsh.model.geo.addLine(p1, p2)
@@ -51,8 +51,8 @@ def generate_mesh(width, height, mesh_size, output_file):
     gmsh.finalize()
 
 if __name__ == "__main__":
-    width = float(sys.argv[1])
-    height = float(sys.argv[2])
-    mesh_size = float(sys.argv[3])
-    output_file = sys.argv[4]
-    generate_mesh(width, height, mesh_size, output_file)
+    output_file = sys.argv[1]
+    width = float(sys.argv[2])
+    height = float(sys.argv[3])
+    mesh_size = float(sys.argv[4])
+    generate_mesh( output_file, width, height, mesh_size)
