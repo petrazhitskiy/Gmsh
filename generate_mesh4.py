@@ -5,13 +5,16 @@ import matplotlib.pyplot as plt
 import meshio
 
 
-def generate_mesh(output_file):
-    gmsh.initialize()
+def generate_mesh(width, height, mesh_size, output_file):
+    gmsh.initialize()   
+    gmsh.model.add("Plane")
+
+
     # Создание точек
-    p1 = gmsh.model.geo.addPoint(0, 0, 0)
-    p2 = gmsh.model.geo.addPoint(1, 0, 0)
-    p3 = gmsh.model.geo.addPoint(1, 1, 0)
-    p4 = gmsh.model.geo.addPoint(0, 1, 0)
+    p1 = gmsh.model.geo.addPoint(width, height, 0, mesh_size)
+    p2 = gmsh.model.geo.addPoint(width, height, 0, mesh_size)
+    p3 = gmsh.model.geo.addPoint(width, height, 0, mesh_size)
+    p4 = gmsh.model.geo.addPoint(width, height, 0, mesh_size)
 
     # Создание линий
     l1 = gmsh.model.geo.addLine(p1, p2)
@@ -30,6 +33,7 @@ def generate_mesh(output_file):
 
     # Генерация сетки для домена (необязательно)
     gmsh.model.mesh.generate(2)  # 2D сетка
+    gmsh.write(output_file)
 
     # Визуализация сетки (необязательно)
     #теперь выводится сразу график из matplotlib, а не открываетсяс gmsh
@@ -47,5 +51,8 @@ def generate_mesh(output_file):
     gmsh.finalize()
 
 if __name__ == "__main__":
-    output_file = sys.argv[1]
-    generate_mesh(output_file)
+    width = float(sys.argv[1])
+    height = float(sys.argv[2])
+    mesh_size = float(sys.argv[3])
+    output_file = sys.argv[4]
+    generate_mesh(width, height, mesh_size, output_file)
