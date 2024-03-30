@@ -15,7 +15,7 @@ def main():
     # Визуализация с помощью pyvista
     plotter = pv.Plotter(window_size=[100,100])
     plotter = pv.Plotter()
-    plotter.add_mesh(mesh)  # Отображение сетки в белом цвете
+    plotter.add_mesh(mesh,show_edges=True, color=True)  # Отображение сетки в белом цвете
     # Вывод графика pyvista в streamlit
     plotter.view_isometric()
     stpyvista(plotter)

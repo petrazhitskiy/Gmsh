@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e88170b0-dde9-4bad-aa18-154c9a22a62b" name="Changes" comment="Примеры streamlit(Наш первый проект)">
+    <list default="true" id="e88170b0-dde9-4bad-aa18-154c9a22a62b" name="Changes" comment="gmsh">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.py" beforeDir="false" afterPath="$PROJECT_DIR$/3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.py" beforeDir="false" afterPath="$PROJECT_DIR$/4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.py" beforeDir="false" afterPath="$PROJECT_DIR$/5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6.py" beforeDir="false" afterPath="$PROJECT_DIR$/6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.py" beforeDir="false" afterPath="$PROJECT_DIR$/7.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test4.py" beforeDir="false" afterPath="$PROJECT_DIR$/test4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test6.py" beforeDir="false" afterPath="$PROJECT_DIR$/test6.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,24 +39,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.4.executor": "Run",
-    "Python.6.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.streamlit.executor": "Run",
-    "Python.task7.executor": "Run",
-    "Python.test4.executor": "Run",
-    "Python.test6.executor": "Run",
-    "Python.tets7.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Streamlit-Gmsh",
-    "last_opened_file_path": "/home/dan/Desktop/FEM/clone/Gmsh",
-    "run.code.analysis.last.selected.profile": "aDefault",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.streamlit.executor&quot;: &quot;Run&quot;,
+    &quot;Python.task7.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tets7.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Streamlit-Gmsh&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dan/Desktop/FEM/clone/Gmsh&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -170,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711727304900</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="gmsh">
+      <option name="closed" value="true" />
+      <created>1711742336625</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711742336625</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,8 +188,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Пример оформления первого слайда" />
     <MESSAGE value="Пример оформления" />
-    <MESSAGE value="gmsh" />
     <MESSAGE value="Примеры streamlit(Наш первый проект)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Примеры streamlit(Наш первый проект)" />
+    <MESSAGE value="gmsh" />
+    <option name="LAST_COMMIT_MESSAGE" value="gmsh" />
   </component>
 </project>
