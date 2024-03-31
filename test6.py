@@ -1,4 +1,7 @@
 import gmsh
+import meshio
+import matplotlib.pyplot as plt
+import pyvista as pv
 
 def create_compound_area():
     gmsh.initialize()
@@ -23,9 +26,30 @@ def create_compound_area():
 
     gmsh.model.mesh.generate(2)
 
-    gmsh.fltk.run()
+    # gmsh.fltk.run()
+    gmsh.write("gmsh_test6.msh")
+    # Загрузка файла .msh в pyvista
+    mesh = pv.read('gmsh_test6.msh')
 
+    # Визуализация с помощью pyvista
+    plotter = pv.Plotter()
+    plotter.add_mesh(mesh)  # Отображение сетки в белом цвете
+    plotter.show()
     gmsh.finalize()
 
-if __name__ == "__main__":
+
+    mesh = meshio.read('gmsh_test6.msh')
+
+    # Отображение данных с помощью matplotlib
+    fig = plt.figure()
+    ax = fig.add_subplot(111, projection='3d')
+    ax.plot_trisurf(mesh.points[:, 0], mesh.points[:, 1], mesh.points[:, 2], triangles=mesh.cells[1].data)
+    plt.show()
+    # Загрузка файла .msh в pyvista
+    mesh = pv.read('gmsh_test6.msh')
+def main():
     create_compound_area()
+
+
+if __name__ == "__main__":
+    main()
