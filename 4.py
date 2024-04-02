@@ -145,9 +145,7 @@ def plot_mesh_from_file(mesh_file):
     for tri in cells:
         t_coords = np.append(tri, tri[0])  # Замыкание треугольника
         plt.plot(points[t_coords, 0], points[t_coords, 1], 'b-')
-def Gmsh():
-    st.write("hi")
-        Streamlit-Gmsh
+
 
     # Отрисовка узлов
     plt.plot(points[:, 0], points[:, 1], 'ro')
