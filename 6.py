@@ -16,7 +16,7 @@ def plot_mesh(mesh_file):
     # Визуализация с помощью pyvista
     mesh = pv.read(mesh_file)
     plotter = pv.Plotter()
-    plotter.add_mesh(mesh, show_edges=True, color=True)  # Отображение сетки в белом цвете
+    plotter.add_mesh(mesh, show_edges=True, color=True)
     # Вывод графика pyvista в streamlit
     plotter.view_isometric()
     stpyvista(plotter)
@@ -24,43 +24,51 @@ def plot_mesh(mesh_file):
 def union():
 
     st.subheader('___')
-    width = st.slider("Ширина ", 0.01, 5.0, 2.0, key='sl01')
-    height = st.slider("Высота", 0.01, 5.0, 2.0, key='sl02')
-    mesh_size = st.slider("Размер сетки", 0.01, 0.5, 0.01, key='sl03')
+    # width_u1 = st.slider("Ширина ", 0.5, 5.0, 2.0, key='sl01')
+    col1, col2 = st.columns(2)
+    with col1:
+        st.header("Основная фигура")
+        figure_type_1 = st.selectbox("Выбирите тип фигуры:", ["Окружность", "Прямоугольник"], key = 'sel01')
+        width_u1 = st.slider("Ширина ", 0.5, 5.0, 2.0, key='sl01')
+        height_u1 = st.slider("Высота", 0.5, 5.0, 2.0, key='sl02')
+        st.write(figure_type_1)
+    with col2:
+        st.header("Что добавляем")
+        figure_type_2 = st.selectbox("Выбирите тип фигуры:", ["Окружность", "Прямоугольник"], key = 'sel02')
+        width_u2 = st.slider("Ширина ", 0.5, 5.0, 2.0, key='sl11')
+        height_u2 = st.slider("Высота", 0.5, 5.0, 2.0, key='sl12')
 
-    # Пример использования для визуализации круглой и треугольной сеток
+    # mesh_size_u = st.slider("Размер сетки", 0.01, 0.5, 0.01, key='sl03')
     b1 = st.button("Сгенерировать", key='bt1')
     if b1:
         mesh_file = "union_mesh6.msh"
-        subprocess.run(["python3", "generate_mesh6.py", str(1), str(1), str(1), mesh_file])
+        subprocess.run(["python3", "generate_mesh6.py",mesh_file,  str(width_u1),str(height_u1), str(width_u2),str(height_u2), figure_type_1, figure_type_2])# str(height_u1), str(width_u2), str(height_u2)
         plot_mesh(mesh_file)
 
 
 def diff():
     st.subheader('___')
-    st.subheader('___')
-    width = st.slider("Ширина ", 0.01, 5.0, 2.0, key='sl21')
-    height = st.slider("Высота", 0.01, 5.0, 2.0, key='sl22')
-    mesh_size = st.slider("Размер сетки", 0.01, 0.5, 0.01, key='sl23')
+    width_d = st.slider("Ширина ", 0.01, 5.0, 2.0, key='sl21')
+    # height_d = st.slider("Высота", 0.01, 5.0, 2.0, key='sl22')
+    # mesh_size_d = st.slider("Размер сетки", 0.01, 0.5, 0.01, key='sl23')
 
-    # Пример использования для визуализации круглой и треугольной сеток
     b2 =st.button("Сгенерировать", key = 'bt2')
     if b2:
         mesh_file = "diff_mesh6.msh"
-        subprocess.run(["python3", "generate_mesh6.py", str(1), str(1), str(1), mesh_file])
+        subprocess.run(["python3", "generate_mesh6.py", mesh_file, width_d])
         plot_mesh(mesh_file)
+
 
 def inter():
     st.subheader('___')
-    width = st.slider("Ширина ", 0.01, 5.0, 2.0, key='sl31')
-    height = st.slider("Высота", 0.01, 5.0, 2.0, key='sl32')
-    mesh_size = st.slider("Размер сетки", 0.01, 0.5, 0.01, key='sl33')
+    width_i = st.slider("Ширина ", 0.01, 5.0, 2.0, key='sl31')
+    # height_i = st.slider("Высота", 0.01, 5.0, 2.0, key='sl32')
+    # mesh_size_i = st.slider("Размер сетки", 0.01, 0.5, 0.01, key='sl33')
 
-    # Пример использования для визуализации круглой и треугольной сеток
     b3 = st.button("Сгенерировать", key='bt3')
     if b3:
         mesh_file = " intersec_mesh.msh"
-        subprocess.run(["python3", "generate_mesh6.py", str(1), str(1), str(1), mesh_file])
+        subprocess.run(["python3", "generate_mesh6.py",mesh_file, width_i])
         plot_mesh(mesh_file)
 
 def main():
