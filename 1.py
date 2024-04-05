@@ -1,19 +1,32 @@
 import streamlit as st
 from st_pages import Page, show_pages, add_page_title
+import numpy as np
 
-st.sidebar.title("Gmsh")
+st.title("Общая характеристика ПО")
+r"""
 
+Gmsh - это автоматический трехмерный генератор конечно-элементной сетки со встроенными средствами предварительной и последующей обработки.
 
-st.title("Общая информация")
+"""
 
+r"""
 
+Установка библиотеки через консоль:
 
+"""
 
-st.subheader("Gmsh2 - это ..... "
-         "для ....... "
-         "Вот некоторые ключевые моменты:")
+code1 = '''
+        $ pip install gmsh
+    '''
+st.code(code1, language='python')
 
-st.subheader("\n1. ")
-st.subheader("\n2. ")
+r"""
 
+Импорт библиотеки:
 
+"""
+
+code2 = '''
+        import pygmsh
+    '''
+st.code(code2, language='python')

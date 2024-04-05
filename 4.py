@@ -145,7 +145,7 @@ def plot_mesh_from_file(mesh_file):
     for tri in cells:
         t_coords = np.append(tri, tri[0])  # Замыкание треугольника
         plt.plot(points[t_coords, 0], points[t_coords, 1], 'b-')
-
+def Gmsh():
 
     # Отрисовка узлов
     plt.plot(points[:, 0], points[:, 1], 'ro')
@@ -158,14 +158,14 @@ def plot_mesh_from_file(mesh_file):
 
 
 # Пример использования для визуализации круглой и треугольной сеток
-figure_type = st.selectbox( "Выбирите тип фигуры:",  ["Окружность", "Многоугольник"])
-if figure_type == "Окружность":
+figure_type2 = st.selectbox( "Выбирите тип фигуры:",  ["Окружность", "Многоугольник"])
+if figure_type2 == "Окружность":
         mesh_file = "circle_mesh.msh"
 else: mesh_file = "triangle_mesh.msh"
-if figure_type == 'Многоугольник': sides = st.slider("Количество углов" , 1, 30, 3,  key='sl1')
+if figure_type2 == 'Многоугольник': sides = st.slider("Количество углов" , 1, 30, 3,  key='sl11')
 else: sides = 0
-radius = st.slider("Радиус" , 1.00, 10.0, 5.0, key='sl2')
-mesh_size = st.slider("Размер сетки", 0.1, 1.00, 0.5 ,  key='sl3' )
+radius = st.slider("Радиус" , 1.00, 10.0, 5.0, key='sl12')
+mesh_size = st.slider("Размер сетки", 0.1, 1.00, 0.5 ,  key='sl13' )
 if st.button("Сгенерировать", key='button2'):
     
     subprocess.run(["python3", "generate_circle4.py", str(sides),str(radius), str(mesh_size), mesh_file ])
